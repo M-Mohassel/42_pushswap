@@ -1,26 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   process_utils_2.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/01 15:42:38 by misi              #+#    #+#             */
-/*   Updated: 2023/08/11 17:20:41 by misi             ###   ########.fr       */
+/*   Created: 2023/08/11 17:06:33 by misi              #+#    #+#             */
+/*   Updated: 2023/08/11 17:16:56 by misi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int	main(int argc, char **argv)
+int	ft_checkdup(t_stack *a)
 {
-	t_stack	*a;
+	t_stack	*tmp;
 
-	a = ft_process(argc, argv);
-	if (!a || ft_checkdup(a))
+	while (a)
 	{
-		ft_free(&a);
-		ft_error();
+		tmp = a->next;
+		while (tmp)
+		{
+			if (a->nbr == tmp->nbr)
+				return (1);
+			tmp = tmp->next;
+		}
+		a = a->next;
 	}
+	return (0);
 }
 
+void	ft_free(t_stack **lst)
+{
+	t_stack	*tmp;
+
+	if (!lst)
+		return ;
+	while (*lst)
+	{
+		tmp = (*lst)->next;
+		(*lst)->nbr = 0;
+		free(*lst);
+		*lst = tmp;
+	}
+}
