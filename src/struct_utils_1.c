@@ -6,7 +6,7 @@
 /*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 17:03:47 by misi              #+#    #+#             */
-/*   Updated: 2023/08/04 17:20:46 by misi             ###   ########.fr       */
+/*   Updated: 2023/09/11 18:09:41 by misi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,5 @@ void	ft_add_back(t_stack **stack, t_stack *stack_new)
 		*stack = stack_new;
 	else
 		(ft_lstlast(*stack))->next = stack_new;
-}
-
-t_stack	*ft_lstlast(t_stack *lst)
-{
-	if (!lst)
-		return (NULL);
-	while (lst->next)
-		lst = lst->next;
-	return (lst);
 }
 

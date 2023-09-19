@@ -6,7 +6,7 @@
 /*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 15:42:38 by misi              #+#    #+#             */
-/*   Updated: 2023/08/11 17:20:41 by misi             ###   ########.fr       */
+/*   Updated: 2023/08/16 17:01:26 by misi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,8 @@ int	main(int argc, char **argv)
 		ft_free(&a);
 		ft_error();
 	}
+	if (!ft_checksorted(a))
+		ft_sort(&a);
+	ft_free(&a);
+	return (0);
 }
-
