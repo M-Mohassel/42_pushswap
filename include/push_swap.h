@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: misi-moh <misi-moh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 15:50:00 by misi              #+#    #+#             */
-/*   Updated: 2023/09/11 18:06:56 by misi             ###   ########.fr       */
+/*   Updated: 2023/09/19 10:35:18 by misi-moh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,17 @@ typedef struct s_stack
 	struct s_stack	*prev;
 }	t_stack;
 
-int	ft_checkdup(t_stack *a);
-int	ft_checksorted(t_stack *stack_a);
+int		ft_checkdup(t_stack *a);
+int		ft_checksorted(t_stack *stack_a);
 
 t_stack	*ft_lstlast(t_stack *lst);
-int	ft_lstsize(t_stack *lst);
-int	ft_min(t_stack *a);
-int	ft_max(t_stack *a);
+int		ft_lstsize(t_stack *lst);
+int		ft_min(t_stack *a);
+int		ft_max(t_stack *a);
 
-int	ft_find_index(t_stack *a, int nbr);
-int	ft_find_place_b(t_stack *stack_b, int nbr_push);
-int	ft_find_place_a(t_stack *stack_a, int nbr_push);
+int		ft_find_index(t_stack *a, int nbr);
+int		ft_find_place_b(t_stack *stack_b, int nbr_push);
+int		ft_find_place_a(t_stack *stack_a, int nbr_push);
 
 void	ft_ra(t_stack **a, int j);
 void	ft_sa(t_stack **a, int j);
@@ -54,30 +54,30 @@ void	ft_rrb(t_stack **b, int j);
 void	ft_rb(t_stack **b, int j);
 void	ft_sb(t_stack **b, int j);
 
-int	ft_atoi2(const char *str);
+int		ft_atoi2(const char *str);
 t_stack	*ft_sub_process(char **argv);
 void	ft_error(void);
 t_stack	*ft_process(int argc, char **argv);
 
 void	ft_free(t_stack **lst);
 
-int	ft_apply_rarb(t_stack **a, t_stack **b, int c, char s);
-int	ft_apply_rrarrb(t_stack **a, t_stack **b, int c, char s);
-int	ft_apply_rrarb(t_stack **a, t_stack **b, int c, char s);
-int	ft_apply_rarrb(t_stack **a, t_stack **b, int c, char s);
+int		ft_apply_rarb(t_stack **a, t_stack **b, int c, char s);
+int		ft_apply_rrarrb(t_stack **a, t_stack **b, int c, char s);
+int		ft_apply_rrarb(t_stack **a, t_stack **b, int c, char s);
+int		ft_apply_rarrb(t_stack **a, t_stack **b, int c, char s);
 
-int	ft_rotate_type_ba(t_stack *a, t_stack *b);
-int	ft_rotate_type_ab(t_stack *a, t_stack *b);
+int		ft_rotate_type_ba(t_stack *a, t_stack *b);
+int		ft_rotate_type_ab(t_stack *a, t_stack *b);
 
-int	ft_case_rarb(t_stack *a, t_stack *b, int c);
-int	ft_case_rrarrb(t_stack *a, t_stack *b, int c);
-int	ft_case_rrarb(t_stack *a, t_stack *b, int c);
-int	ft_case_rarrb(t_stack *a, t_stack *b, int c);
+int		ft_case_rarb(t_stack *a, t_stack *b, int c);
+int		ft_case_rrarrb(t_stack *a, t_stack *b, int c);
+int		ft_case_rrarb(t_stack *a, t_stack *b, int c);
+int		ft_case_rarrb(t_stack *a, t_stack *b, int c);
 
-int	ft_case_rarb_a(t_stack *a, t_stack *b, int c);
-int	ft_case_rrarrb_a(t_stack *a, t_stack *b, int c);
-int	ft_case_rarrb_a(t_stack *a, t_stack *b, int c);
-int	ft_case_rrarb_a(t_stack *a, t_stack *b, int c);
+int		ft_case_rarb_a(t_stack *a, t_stack *b, int c);
+int		ft_case_rrarrb_a(t_stack *a, t_stack *b, int c);
+int		ft_case_rarrb_a(t_stack *a, t_stack *b, int c);
+int		ft_case_rrarb_a(t_stack *a, t_stack *b, int c);
 
 void	ft_sort_b_till_3(t_stack **stack_a, t_stack **stack_b);
 t_stack	*ft_sort_b(t_stack **stack_a);

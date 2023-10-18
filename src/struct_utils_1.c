@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   struct_utils_1.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: misi-moh <misi-moh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 17:03:47 by misi              #+#    #+#             */
-/*   Updated: 2023/09/11 18:09:41 by misi             ###   ########.fr       */
+/*   Updated: 2023/09/19 10:33:19 by misi-moh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,3 @@ void	ft_add_back(t_stack **stack, t_stack *stack_new)
 	else
 		(ft_lstlast(*stack))->next = stack_new;
 }
-

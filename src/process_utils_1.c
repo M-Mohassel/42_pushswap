@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   process_utils_1.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: misi-moh <misi-moh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 16:50:47 by misi              #+#    #+#             */
-/*   Updated: 2023/08/11 17:06:39 by misi             ###   ########.fr       */
+/*   Updated: 2023/09/19 10:34:15 by misi-moh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ t_stack	*ft_sub_process(char **argv)
 }
 
 void	ft_error(void)
-{	
+{
 	write (2, "Error\n", 6);
 	exit(1);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sorting.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: misi <misi@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: misi-moh <misi-moh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 19:38:20 by misi              #+#    #+#             */
-/*   Updated: 2023/09/05 19:39:24 by misi             ###   ########.fr       */
+/*   Updated: 2023/09/19 10:33:55 by misi-moh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,8 +118,8 @@ void	ft_sort(t_stack **stack_a)
 		{
 			while ((*stack_a)->nbr != ft_min(*stack_a))
 				ft_rra(stack_a, 0);
-		}			
-	}	
+		}
+	}
 }
 
 // This function sort the stack if there are only 
